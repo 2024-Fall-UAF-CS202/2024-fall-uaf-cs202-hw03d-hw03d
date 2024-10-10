@@ -1,0 +1,17 @@
+{
+	"build": {
+		"dockerfile": "./Dockerfile",
+		"context": "."
+	},
+	"remoteUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools@1.21.6"
+			]
+		}
+	},
+	"containerEnv": {
+        	"SHELL": "/bin/bash"
+	}
+}

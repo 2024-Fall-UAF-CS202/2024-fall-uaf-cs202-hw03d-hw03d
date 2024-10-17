@@ -21,7 +21,8 @@ public:
         Exit   = 'Z'
     };
 
-    friend std::istream& operator>>(std::istream& in, GameBoard & data);
+    friend std::istream& operator>>(std::istream& in,        GameBoard & data);
+    friend std::ostream& operator<<(std::ostream& out, const GameBoard & data);
 
 private:
 

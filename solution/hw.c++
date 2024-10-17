@@ -8,8 +8,8 @@
 
 int main(int argc, char** argv) {
   
-  std::cerr << "Sunday is day " << std::underlying_type_t<Day>(Day::Sunday) << "\n";
-  return -1;
+  //std::cerr << "Sunday is day " << std::underlying_type_t<Day>(Day::Sunday) << "\n";
+  //return -1;
 
   // Store command line arguments as C++ vector of C++ strings
   const auto args = std::vector<std::string>{argv, argc + argv};

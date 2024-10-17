@@ -8,8 +8,11 @@
 
 int main(int argc, char** argv) {
   
+  std::cerr << "Sunday is day " << std::underlying_type_t<Day>(Day::Sunday) << "\n";
+  return -1;
+
   // Store command line arguments as C++ vector of C++ strings
-  auto args = std::vector<std::string>{argv, argc + argv};
+  const auto args = std::vector<std::string>{argv, argc + argv};
   
   // Create input file stream to read data from text file
   auto in = std::ifstream(args.at(1));
@@ -20,7 +23,6 @@ int main(int argc, char** argv) {
   // Attempt to read the data
   in >> data;
   if (in.eof()) {
-  //if (true) {
 
     // Print the game board
     std::cout << data;
